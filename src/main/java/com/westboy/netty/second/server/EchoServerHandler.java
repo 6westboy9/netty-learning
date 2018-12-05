@@ -14,7 +14,7 @@ public class EchoServerHandler extends SimpleChannelInboundHandler<String> {
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, String msg) throws Exception {
         Channel channel = ctx.channel();
-        System.out.println("from client(" + channel.remoteAddress() + "): " + msg);
+        System.out.println("from client(" + channel.localAddress() + "): " + msg);
 
         String returnMsg = "Welcome!";
         channel.writeAndFlush(returnMsg);

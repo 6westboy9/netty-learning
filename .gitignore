@@ -105,6 +105,7 @@ fabric.properties
 .idea/httpRequests
 
 .idea/
+.gradle/
 blog/
-flash-netty.iml
+netty-learning.iml
 target/
