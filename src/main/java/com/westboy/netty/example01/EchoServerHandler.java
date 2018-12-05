@@ -1,4 +1,4 @@
-package com.westboy.netty.first;
+package com.westboy.netty.example01;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

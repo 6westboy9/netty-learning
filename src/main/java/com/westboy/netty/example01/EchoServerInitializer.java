@@ -1,4 +1,4 @@
-package com.westboy.netty.first;
+package com.westboy.netty.example01;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;

@@ -1,6 +1,5 @@
-package com.westboy.netty.third;
+package com.westboy.netty.example03.server;
 
-import com.westboy.netty.second.server.EchoServerInitializer;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -25,7 +24,7 @@ public class ChatServer {
                     .channel(NioServerSocketChannel.class)
                     // 此处的childHandler对应workerGroup
                     // 如果为handler时对应boosGroup，在客户端只有一个，所以使用的是handler
-                    .childHandler(null);
+                    .childHandler(new ChatServerInitializer());
 
             ChannelFuture channelFuture = serverBootstrap.bind(8890).sync();
             channelFuture.channel().closeFuture().sync();

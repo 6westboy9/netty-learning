@@ -1,4 +1,4 @@
-package com.westboy.netty.second.client;
+package com.westboy.netty.example02.client;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;

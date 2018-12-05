@@ -1,4 +1,4 @@
-package com.westboy.netty.second.server;
+package com.westboy.netty.example02.server;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;

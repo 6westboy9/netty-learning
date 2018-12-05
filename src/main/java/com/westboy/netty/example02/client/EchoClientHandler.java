@@ -1,12 +1,8 @@
-package com.westboy.netty.second.client;
+package com.westboy.netty.example02.client;
 
 import io.netty.channel.Channel;
-import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import io.netty.util.concurrent.EventExecutorGroup;
-
-import java.time.LocalDateTime;
 
 /**
  * @author westboy
