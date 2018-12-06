@@ -1,2 +1,4 @@
 rootProject.name = 'netty-learning'
+include 'sheng-si-yuan-lecture'
+include 'netty-in-action'
 
