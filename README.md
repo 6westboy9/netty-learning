@@ -1,4 +1,4 @@
-# netty-learning 学习
+# netty-learning
 
 ## netty-in-action
 
@@ -13,4 +13,8 @@
 4. Netty 读写检测机制与长连接
 	* 需求说明：
 5. Netty 对 WebSocket 的支持
+	* 需求说明： 
+6. Protobuf集成Netty
+	* 需求说明： 
+7. Protobuf集成Netty的多协议消息传递
 	* 需求说明： 
