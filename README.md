@@ -14,7 +14,11 @@
 	* 需求说明：
 5. Netty 对 WebSocket 的支持
 	* 需求说明： 
-6. Protobuf集成Netty
+6. Protobuf 集成 Netty
 	* 需求说明： 
-7. Protobuf集成Netty的多协议消息传递
+7. Protobuf 集成 Netty 的多协议消息传递
 	* 需求说明： 
+	* 解决方案有两种：官方
+
+资料见：https://blog.csdn.net/hami700100332/article/category/7672593，后续整理。
+	

@@ -1,5 +1,6 @@
-package com.westboy.netty.example06;
+package com.westboy.netty.example06.server;
 
+import com.westboy.netty.example06.MyDataInfo;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
@@ -13,14 +14,15 @@ import io.netty.handler.codec.protobuf.ProtobufVarint32LengthFieldPrepender;
  * @date 2018-12-11
  * @since 1.0
  */
-public class TestClientInitializer extends ChannelInitializer<SocketChannel> {
+public class TestServerInitializer extends ChannelInitializer<SocketChannel> {
     @Override
     protected void initChannel(SocketChannel ch) {
         ChannelPipeline pipeline = ch.pipeline();
         pipeline.addLast(new ProtobufVarint32FrameDecoder());
+        // 只能处理Student
         pipeline.addLast(new ProtobufDecoder(MyDataInfo.Student.getDefaultInstance()));
         pipeline.addLast(new ProtobufVarint32LengthFieldPrepender());
         pipeline.addLast(new ProtobufEncoder());
-        pipeline.addLast(new TestClientHandler());
+        pipeline.addLast(new TestServerHandler());
     }
 }

@@ -1,6 +1,5 @@
-package com.westboy.netty.example06;
+package com.westboy.netty.example06.server;
 
-import com.westboy.netty.example04.ServerInitializer;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.nio.NioEventLoopGroup;

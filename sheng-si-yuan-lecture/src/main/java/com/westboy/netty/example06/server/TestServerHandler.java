@@ -1,5 +1,6 @@
-package com.westboy.netty.example06;
+package com.westboy.netty.example06.server;
 
+import com.westboy.netty.example06.MyDataInfo;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
