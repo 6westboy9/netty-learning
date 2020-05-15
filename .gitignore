@@ -106,6 +106,9 @@ fabric.properties
 
 .idea/
 .gradle/
+gradle/
 blog/
 netty-learning.iml
 target/
+gradlew
+gradlew.bat
